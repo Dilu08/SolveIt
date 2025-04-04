@@ -1,0 +1,113 @@
+body {
+    background-image: url('images/2302.w026.n002.3216B.p1.3216.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90vw;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #D6A8A8;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(174, 88, 88, 0.2);
+    box-sizing: border-box;
+}
+
+.signup-form h2 {
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3em;
+    color: #6D0505;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 2px; 
+}
+
+.form-group {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 15px;
+    font-size: 1.3em;
+    border: 2px solid #BB6D6D;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #BB6D6D;
+    color: #490917;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.form-group input::placeholder {
+    color: #D6A8A8;
+    text-align: center;
+}
+
+.form-group button {
+    background: linear-gradient(to right, #8A3838, #240F0F);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    height: 60px;
+    width: 200px;
+    transition: transform 0.2s, box-shadow 0.2s; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.form-group button:hover {
+    background: linear-gradient(to right, #8A3838, #240F0F);
+    transform: translateY(-3px); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.top-right-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-right-button button {
+    background: linear-gradient(135deg, #ff5a5a, #4a1919);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.top-right-button button:hover {
+    background: linear-gradient(135deg, #ff3a3a, #360e0e);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.8);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
