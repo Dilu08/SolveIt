@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    
-    <div class="center-center full">
-    <div class="mt-4">
-        <img src="images/My Logo.png">
-    </div>
-    <div class="card-small">
+  </head>
+  <body>
+    <audio autoplay loop>
+        <source src="sound/sound music.mp3" type="audio/mp3">
+    </audio>
+     <div class="center-center full">
+        <div class="mt-4">
+            <img src="images/My Logo.png">
+        </div>
+      <div class="card-small">
         <a href="login.html">
             <input class="mt-4 btn01" type="button" value="LOGIN" >
         </a>
         <a href="registration.html">
             <input class="mt-2 btn01" type="button" value="REGISTER">
         </a>
+      </div>
     </div>
-</div>
+
+    <div class="stars"></div>
+
+    <script>
+        // JavaScript to generate stars dynamically
+        document.addEventListener("DOMContentLoaded", function() {
+            const starContainer = document.querySelector(".stars");
+            for (let i = 0; i < 50; i++) {
+                let star = document.createElement("div");
+                star.className = "star";
+                star.style.top = Math.random() * 100 + "vh";
+                star.style.left = Math.random() * 100 + "vw";
+                star.style.animationDuration = (Math.random() * 3 + 2) + "s";
+                starContainer.appendChild(star);
+            }
+        });
+    </script>
+
+  </body>
+</html>

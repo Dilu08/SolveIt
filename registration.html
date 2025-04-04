@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+  <body>
+    <audio autoplay loop>
+        <source src="sound/sound music.mp3" type="audio/mp3">
+    </audio>
+    <div class="top-right-button">
+        <a href="index.html">
+            <button class="back-button"><i class="fas fa-arrow-left"></i> Back</button>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="signup-form">
+            <h2>SIGN UP</h2>
+
+            <form action="registration.php" method="post">
+                <div class="form-group">
+                    <input type="text" id="username" name="username" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
+
+

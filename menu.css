@@ -1,0 +1,126 @@
+body {
+    background-image: url('images/2302.w026.n002.3216B.p1.3216.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: #e0e0e0;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+.menu-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: pulse 2s infinite ease-in-out; /* Added pulse animation */
+}
+
+.menu-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-nav li {
+    margin-bottom: 20px;
+}
+
+.menu-nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    animation: slideIn 0.5s ease-out forwards; /* Added slide-in animation */
+    opacity: 0;
+}
+
+.menu-nav li:nth-child(1) a {
+    animation-delay: 0.1s;
+}
+
+.menu-nav li:nth-child(2) a {
+    animation-delay: 0.2s;
+}
+
+.menu-nav li:nth-child(3) a {
+    animation-delay: 0.3s;
+}
+
+.menu-nav a:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-nav i {
+    font-size: 1.8em;
+}
+
+
+/* Play Button Style */
+.play-button {
+    background: linear-gradient(to right, #286A28, #0F240F);
+}
+
+.play-button:hover {
+    background: linear-gradient(to right, #184A18, #091809);
+}
+
+/* Home Button Style */
+.home-button {
+    background: linear-gradient(to right, #38388A, #0F0F24);
+}
+
+.home-button:hover {
+    background: linear-gradient(to right, #28286A, #090918);
+}
+
+/* Exit Button Style */
+.exit-button {
+    background: linear-gradient(to right, #8A2828, #240F0F);
+}
+
+.exit-button:hover {
+    background: linear-gradient(to right, #6A1818, #180909);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
